@@ -28,11 +28,11 @@
     </footer>
 
     <script>
-        const v1TokenAddress = "YOUR_V1_TOKEN_ADDRESS_HERE";
-        const migrationContractAddress = "YOUR_MIGRATION_CONTRACT_ADDRESS_HERE";
+        const v1TokenAddress = "0xD9e8D20BDE081600fac0d94b88EAFaDDcE55aA43";
+        const migrationContractAddress = "TBD";
 
         // ABI Definitions
-        const v1TokenABI = [ /* Insert V1 Token ABI here */ ];
+        const v1TokenABI = await fetch('v1contractabi.json').then(response => response.json());
         const migrationContractABI = [ /* Insert Migration Contract ABI here */ ];
 
         let web3;
